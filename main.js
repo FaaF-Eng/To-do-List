@@ -6,3 +6,4 @@ function adicionarTarefa(){   // Declaração da função adicionarTarefa, que s
         document.getElementById('inputTarefa').value = ''; //Limpar o campo para digitar uma nova tarefa.
     }
 }
+//Teste
