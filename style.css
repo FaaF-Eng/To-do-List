@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    background:linear-gradient(to bottom, green, white 350%);
+}
+#msg{        /*Isso vai editar o título "LISTA DE TAREFAS"*/
+color: rgb(81, 255, 0);
+border: 10px solid rgb(81, 255, 0);
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 10vh;
+width: 50vh;
+margin: 0 auto;
+}
+
+#list{       /*Isso vai editar o subtítulo*/
+    color: rgb(255, 255, 255);;
+   /* border: 2px solid red;*/
+    height: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer{
+    /*border: 2px solid red;*/
+    font-size: 15px;
+    margin-top: 450px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botão :focus {outline-style: none;}/*Remove o contorno padrão do navegador*/
+.botão {
+    background-color: rgb(81, 255, 0);
+    position: absolute;
+    top: 160px;
+    right: 550px;
+    display: flex;
+    border: 2px solid;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px; /*Reduz o tamanho da fonte*/
+}
+
+#inputTarefa{ /*Editando a aparência e cores da caixa onde insiro as tarefas*/
+    background-color: rgb(1, 77, 14);
+    color: rgb(0, 255, 85);
+    margin: 0 auto; /*Centraliza*/ 
+    display: flex; /*Centraliza*/
+}
+#inputTarefa::placeholder{ /*Subclasse ::placeholder* - Aqui serve para editar a aparência do placeholder*/
+    color: rgb(0, 255, 85);
+    opacity: 0.9;
+}
+
+#tarefas{ /*Aqui eu edito as tarefas listadas*/
+    color:white;
+    position: absolute;
+    top:250px;
+    right:680px;
+    display:flex;
+}

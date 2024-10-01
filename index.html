@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para o documento como UTF-8, que suporta a maioria dos caracteres utilizados. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Garante que a página seja renderizada corretamente em dispositivos móveis, ajustando a escala de acordo com a largura da tela. -->
+    <link rel="stylesheet" href="style.css">
+    <title>FaaF's Notes</title>
+</head>
+
+<body>
+    <h1 id ="msg">LISTA DE TAREFAS</h1>
+    <p id="list">Tarefas Atuais:</p><!-- Parágrafo-->
+    <input type="text" id="inputTarefa" placeholder="Digite uma Tarefa..."><!-- Caixa de entrada de texto para o usuário inserir novas tarefas. -->
+    <div class="botão" onclick="adicionarTarefa()">Adicionar Tarefa</div><!-- Um botão que, ao ser clicado, chama a função JavaScript "adicionarTarefa()". -->
+    <div id="tarefas"></div><!-- Div vazia onde as tarefas digitadas pelo usuário serão adicionadas dinamicamente. -->
+    <footer>Criado por Fábio Teixeira</footer>
+<script src="main.js"></script><!-- Link para o arquivo JavaScript externo que contém a lógica do site. -->
+</body>
+</html>
+
