@@ -68,3 +68,22 @@ footer{
     list-style: square;
     font-size: large;
 }
+.botãox :focus {outline-style: none;}/*Remove o contorno padrão do navegador*/
+.botãox {
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 160px;
+    right: 470px;
+    display: flex;
+    border: 2px solid;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px; /*Reduz o tamanho da fonte*/}
+
+.riscado{
+    text-decoration: line-through;
+}
