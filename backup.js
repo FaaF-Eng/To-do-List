@@ -34,7 +34,6 @@ function limparLista(){
 
 
 
-//Funcionou :
 
 function adicionarTarefa(){   // Declaração da função adicionarTarefa, que será chamada quando o botão for clicado.
     let tarefa = document.getElementById('inputTarefa').value;  // Captura o valor do campo de texto (input) e armazena na variável "tarefa".
@@ -101,7 +100,7 @@ function riscarTarefa(){
 
 //============================================================================================
 
-//Tentativa Fracassada de mudar para uma lista 01:
+//Tentativa de mudar para uma lista 01:
 
 function  adicionarTarefa(){
     let tarefa = document.getElementById('inputTarefa').value;
