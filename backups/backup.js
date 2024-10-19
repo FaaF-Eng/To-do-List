@@ -121,7 +121,7 @@ function limparLista(){
     document.getElementById('adicionarBtn').style.display='block';//Retorna o Botão de inserir tarefa
 }
 
-//Botão que risca tarefa
+//Botão que risca tarefa.
 function riscarTarefa(){
     const div = document.getElementById('task1');
     div.classList.toggle('riscado');
