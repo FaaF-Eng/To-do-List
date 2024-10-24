@@ -1,3 +1,5 @@
+<!--Adição do HTML antes do botão de START-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <meta charset="UTF-8"> <!-- Define a codificação de caracteres para o documento como UTF-8, que suporta a maioria dos caracteres utilizados. -->
@@ -10,8 +12,10 @@
     <h1 id ="msg">FaaF's Notes</h1>
     <h2 id="borda"></h2>
     <p id="list">Tarefas Atuais:</p><!-- Parágrafo-->
-    <p2><img id="folha" src="img/folinha.png" width="50px">  </p2>
-    <div id="git" onclick="git()">GitHub</div>
+    <p>
+        <img id="folha" src="img/folinha.png" width="50px">
+    </p>
+    <div id="start">start</div>
     <input type="text" id="inputTarefa" placeholder="Digite uma Tarefa..."><!-- Caixa de entrada de texto para o usuário inserir novas tarefas. -->
     <div id='adicionarBtn'class="botão" onclick="adicionarTarefa()">Adicionar Tarefa</div><!-- Um botão que, ao ser clicado, chama a função JavaScript "adicionarTarefa()". -->
     <div id="tarefas"></div><!-- Div vazia onde as tarefas digitadas pelo usuário serão adicionadas dinamicamente. -->

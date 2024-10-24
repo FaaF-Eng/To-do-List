@@ -87,3 +87,135 @@ footer{
 .riscado{
     text-decoration: line-through;
 }
+
+/*Antes da adição do botão de START*/
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #e8e4d6;
+    font-family: monospace;
+}
+#msg{        /*Isso vai editar o título "LISTA DE TAREFAS"*/
+color: rgb(0, 0, 0);
+position: relative;
+top: 0px;
+left: -260px;
+background-color: #e8e4d6;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 7vh;
+
+margin: 0px ;
+}
+#borda{
+    position: relative;
+    top: -10px;
+    border: 1px solid rgb(0, 0, 0); 
+}
+footer{
+    /*border: 2px solid red;*/
+    font-size: 15px;
+    margin-top: 450px;
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#list{       /*Isso vai editar o subtítulo*/
+    color: rgb(0, 0, 0);;
+   /* border: 2px solid red;*/
+   position: relative; 
+   top:100px;
+   height: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.botão :focus {outline-style: none;}/*Remove o contorno padrão do navegador*/
+.botão { /*Botão de inserir tarefas*/
+    background-color: rgb(81, 255, 0);
+    position: absolute;
+    top: 160px;
+    right: 550px;
+    display: flex;
+    border: 2px solid;
+    border-radius: 10px;
+    height: 40px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px; /*Reduz o tamanho da fonte*/
+    box-shadow: 5px 5px 0 00px black; 
+    padding: 0;   
+    margin: 0;
+}
+#inputTarefa{ /*Editando a aparência e cores da caixa onde insiro as tarefas*/
+    background-color: rgb(1, 77, 14);
+    color: rgb(0, 255, 85);
+    margin: 0 auto; /*Centraliza*/ 
+    display: flex; /*Centraliza*/
+    box-shadow: 5px 5px 0 0px black;
+
+}
+#inputTarefa::placeholder{ /*Subclasse ::placeholder* - Aqui serve para editar a aparência do placeholder*/
+    color: rgb(0, 255, 85);
+    opacity: 0.9;
+}
+#tarefas{ /*Aqui eu edito as tarefas listadas*/
+    color:rgb(0, 0, 0);
+    position: absolute;
+    top:250px;
+    right:700px;
+    list-style: square;
+    font-size: large;
+}
+.botãox :focus {outline-style: none;}/*Remove o contorno padrão do navegador*/
+.botãox {
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 160px;
+    right: 450px;
+    display: flex;
+    border: 2px solid;
+    border-radius: 10px;
+    height: 40px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px; /*Reduz o tamanho da fonte*/
+    box-shadow: 5px 5px 0 00px black;
+}
+
+#folha{
+    position: absolute;
+    top: -3px;
+    left: 340px;
+    
+}
+
+#start{ /*Esse é o ID do Start, feito para editar a aparência total do botão*/
+    color: rgb(255, 255, 255);
+    background-color: green;
+    position: relative;
+    top:-125px;
+    left:1100px;
+    font-weight: bold;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 80px;
+    height: 25px;
+    box-shadow: 5px 5px 0 00px black
+
+}

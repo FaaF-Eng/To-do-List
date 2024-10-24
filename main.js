@@ -1,4 +1,3 @@
-// Aguarda o carregamento completo do DOM antes de executar o código
 document.addEventListener('DOMContentLoaded', () => {
     let contador = 0; // Inicializa um contador para gerar IDs únicos para as tarefas
 
@@ -41,9 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
 //Limpa a lista
 function limparLista(){
     document.getElementById('tarefas').innerHTML = ''; //Essa linha seleciona o elemento HTML com o ID tarefas e redefine seu conteúdo interno (o que está entre as tags) para uma string vazia.
-    document.getElementById('tarefas').style.display = 'none' //Essa linha faz com que o elemento tarefas não seja exibido na página.
-    document.getElementById('tarefas').style.display = 'block'; //faz com que o elemento se torne visível novamente
-    document.getElementById('adicionarBtn').style.display='block';//Retorna o Botão de inserir tarefa
 }
 
 //Botão que risca tarefa
@@ -51,3 +47,4 @@ function riscarTarefa(){
     const div = document.getElementById('task1');
     div.classList.toggle('riscado');
 }
+
